@@ -6,12 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ultimate UPI — Payments Made Simpler</title>
+    <!-- Favicon -->
+     <link rel="icon"
+      type="image/png"
+      href="{{ asset('favicon.png') }}">
+      <link rel="icon"
+      type="image/png"
+      href="/favicon-96x96.png"
+      sizes="96x96">
+
+<link rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg">
+
+<link rel="shortcut icon"
+      href="/favicon.ico">
+
+<link rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png">
+
+<meta name="apple-mobile-web-app-title"
+      content="Ultimate UPI">
+
+<link rel="manifest"
+      href="/site.webmanifest">
+
 
     <meta name="description"
         content="Ultimate UPI — A simple, secure and powerful digital payment platform.">
 
     <style>
+    .logo {
+    width: 55px;
+    height: 55px;
 
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    background: #ffffff;
+
+    padding: 5px;
+}
         /* =====================================================
            RESET
         ===================================================== */
@@ -155,15 +192,15 @@
             align-items: center;
             gap: 12px;
 
-            font-size: 23px;
+            font-size: 30px;
             font-weight: 800;
 
             color: #071542;
         }
 
         .brand-logo {
-            width: 42px;
-            height: 42px;
+            width: 50px;
+            height: 52px;
 
             object-fit: contain;
 
@@ -988,49 +1025,341 @@
             font-size: 10px;
         }
 
+/* =====================================================
+   TRUSTED NETWORK
+===================================================== */
 
-        /* =====================================================
-           TRUSTED SECTION
-        ===================================================== */
+.trusted-network {
+    width: 100%;
+    max-width: 100%;
 
-        .trusted {
-            padding: 30px 5% 75px;
+    padding: 45px 4% 45px;
 
-            text-align: center;
+    box-sizing: border-box;
 
-            border-top:
-                1px solid rgba(150,190,220,.2);
-        }
+    overflow: hidden;
 
-        .trusted-title {
-            color: #63789e;
-
-            font-size: 14px;
-
-            margin-bottom: 28px;
-        }
-
-        .trusted-items {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            gap: 55px;
-
-            flex-wrap: wrap;
-        }
-
-        .trusted-item {
-            color: #53688f;
-
-            font-size: 18px;
-
-            font-weight: 800;
-
-            opacity: .85;
-        }
+    background:
+        linear-gradient(
+            135deg,
+            #f4fbff 0%,
+            #edf8ff 50%,
+            #f3f5ff 100%
+        );
+}
 
 
+/* HEADING */
+
+.trusted-heading {
+    width: 100%;
+    max-width: 750px;
+
+    margin: 0 auto 30px;
+
+    text-align: center;
+}
+
+.trusted-label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #6482aa;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.trusted-heading h2 {
+    margin: 0 0 7px;
+
+    color: #132650;
+
+    font-size: 38px;
+
+    line-height: 1.15;
+}
+
+.trusted-heading h2 span {
+    color: #2681ed;
+}
+
+.trusted-heading p {
+    margin: 0;
+
+    color: #7187a8;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   FOUR LOGO CARDS
+===================================================== */
+
+.trusted-grid {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 14px;
+
+    box-sizing: border-box;
+}
+
+
+/* CARD */
+
+.trusted-card {
+    width: 100%;
+    min-width: 0;
+
+    height: 145px;
+
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255, 255, 255, 0.62);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.95);
+
+    box-shadow:
+        0 10px 30px
+        rgba(70, 125, 175, 0.08);
+
+    backdrop-filter:
+        blur(15px);
+
+    -webkit-backdrop-filter:
+        blur(15px);
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   LOGO AREA
+===================================================== */
+
+.trusted-logo {
+    width: 150px;
+    height: 70px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 7px;
+
+    overflow: hidden;
+}
+
+
+/* ALL LOGO IMAGES */
+
+.trusted-logo img {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 120%;
+    max-height: 125%;
+
+    object-fit: contain;
+}
+
+
+/* UPI */
+
+.logo-upi img {
+    width: 80px;
+
+    max-height: 70px;
+}
+
+
+/* NPCI */
+
+.logo-npci img {
+    width: 120px;
+
+    max-height: 60px;
+}
+
+
+/* RBI */
+
+.logo-rbi img {
+    width: 90px;
+
+    max-height: 65px;
+}
+
+
+/* =====================================================
+   SECURITY
+===================================================== */
+
+.logo-secure {
+    width: 60px;
+    height: 60px;
+
+    margin-bottom: 10px;
+}
+
+.secure-shield {
+    width: 48px;
+    height: 48px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #2789f5,
+            #0864d5
+        );
+
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    /* box-shadow:
+        0 7px 18px
+        rgba(20, 110, 230, 0.22); */
+}
+
+
+/* CARD TEXT */
+
+.trusted-card p {
+    width: 100%;
+
+    margin: 0;
+
+    color: #607a9d;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    line-height: 1.35;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .trusted-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 500px) {
+
+    .trusted-network {
+        padding: 40px 15px;
+    }
+
+    .trusted-heading h2 {
+        font-size: 30px;
+    }
+
+    .trusted-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+    .trusted-card {
+        height: 125px;
+
+        padding: 10px;
+    }
+
+    .trusted-logo {
+        width: 110px;
+        height: 55px;
+    }
+
+    .logo-upi img {
+        width: 65px;
+    }
+
+    .logo-npci img {
+        width: 90px;
+    }
+
+    .logo-rbi img {
+        width: 60px;
+    }
+
+    .trusted-card p {
+        font-size: 9px;
+    }
+
+    .logo-secure {
+        width: 50px;
+        height: 50px;
+    }
+
+    .secure-shield {
+        width: 42px;
+        height: 42px;
+    }
+
+}
         /* =====================================================
            FEATURES
         ===================================================== */
@@ -1539,11 +1868,11 @@
 
     <div class="nav-buttons">
 
-        <a href="#" class="login-btn">
+        <a href="{{ url('/login') }}" class="login-btn">
             Login
         </a>
 
-        <a href="#" class="get-started">
+        <a href="{{ url('/get-started') }}" class="get-started">
             Get Started
         </a>
 
@@ -1598,7 +1927,7 @@
 
         <div class="hero-buttons">
 
-            <a href="#" class="primary-btn">
+            <a href="{{ url('/get-started') }}" class="primary-btn">
 
                 Get Started
 
@@ -1962,44 +2291,109 @@
 
 </section>
 
-
-
 <!-- =====================================================
-     TRUSTED
+     TRUSTED NETWORK
 ===================================================== -->
 
-<section class="trusted">
+<<!-- =====================================================
+     TRUSTED NETWORK
+===================================================== -->
 
+<section class="trusted-network">
 
-    <div class="trusted-title">
-        Trusted. Secure. Simple.
+    <div class="trusted-heading">
+
+        <span class="trusted-label">
+            TRUSTED. SECURE. SIMPLE.
+        </span>
+
+        <h2>
+            Built for <span>Secure Payments</span>
+        </h2>
+
+        <p>
+            Powered by India's trusted digital payment ecosystem.
+        </p>
+
     </div>
 
 
-    <div class="trusted-items">
+    <div class="trusted-grid">
 
-        <div class="trusted-item">
-            UPI
+        <!-- UPI -->
+        <div class="trusted-card">
+
+            <div class="trusted-logo logo-upi">
+                <img
+                    src="{{ asset('images/upi.png') }}"
+                    alt="UPI Logo"
+                >
+            </div>
+
+            <p>
+                Unified Payments Interface
+            </p>
+
         </div>
 
-        <div class="trusted-item">
-            NPCI
+
+        <!-- NPCI -->
+        <div class="trusted-card">
+
+            <div class="trusted-logo logo-npci">
+                <img
+                    src="{{ asset('images/npci.png') }}"
+                    alt="NPCI Logo"
+                >
+            </div>
+
+            <p>
+                National Payments Corporation of India
+            </p>
+
         </div>
 
-        <div class="trusted-item">
-            RBI
+
+        <!-- RBI -->
+        <div class="trusted-card">
+
+            <div class="trusted-logo logo-rbi">
+                <img
+                    src="{{ asset('images/rbi.png') }}"
+                    alt="RBI Logo"
+                >
+            </div>
+
+            <p>
+                Reserve Bank of India
+            </p>
+
         </div>
 
-        <div class="trusted-item">
-            🛡 100% Secure
+
+        <!-- SECURITY -->
+        <div class="trusted-card">
+
+            <div class="trusted-logo logo-secure">
+
+                <div class="secure-shield">
+                    <img
+                    src="{{ asset('images/secure.png') }}"
+                    alt="Secure Logo"
+                >
+                </div>
+
+            </div>
+
+            <p>
+                100% Secure
+            </p>
+
         </div>
 
     </div>
 
 </section>
-
-
-
 <!-- =====================================================
      FEATURES
 ===================================================== -->
@@ -2140,7 +2534,7 @@
         </p>
 
 
-        <a href="#" class="primary-btn">
+        <a href="{{ url('/signup') }}" class="primary-btn">
             Create Account →
         </a>
 
@@ -2175,7 +2569,7 @@
             </strong>
 
             <span>
-                Payments for a Better Tomorrow
+                Payments Made Simpler
             </span>
 
         </div>
